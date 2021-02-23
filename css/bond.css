@@ -23,8 +23,8 @@ body {font-family:georgia;}
 	margin:0;
 }
 
-#pic{
-	position:absolute;
+.pic{
+	position:absolute
 	right:10px;
 	top:10px;
 }
