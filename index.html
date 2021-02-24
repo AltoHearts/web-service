@@ -92,13 +92,26 @@ function loadAJAX(cat)
     
 function toConsole(data)
 {//return data to console for JSON examination
-	console.log(data); //to view,use Chrome con.sole, ctrl + shift + j
+	console.log(data); //to view,use Chrome console, ctrl + shift + j
 }
 
 function bondJSON(data){
 //JSON processing data goes here
 	//toConsole(data);
-	$("#output").text(JSON.stringify(data));
+	//$("#output").text(JSON.stringify(data));
+
+	$.each(data.films, function(i, item){
+		let text = `
+			<b>Title:</b>: ${item.Title}<br /> 
+			<b>Film #:</b>: ${item.Film}<br /> 
+			<b>Year:</b>: ${item.Year}<br /> 
+			<b>Bond:</b>: ${item.Bond}<br /> 
+			<b>Box Office:</b>: ${item.BoxOffice}<br /> 
+			<b>Writters:</b>: ${item.Writters}<br />
+			<div class="pic"><img scr="thumbnails/a-veiw-to-a-kill.jpg" /></div>  
+		`;
+		$("<div></div>").html(text).appendTo("#films");
+	});
 }
 
 </script>
@@ -109,15 +122,7 @@ function bondJSON(data){
 		<a href="box" class="category">Bond Films By International Box Office Totals</a>
 		<h3 id="filmtitle">Title Will Go Here</h3>
 		<div id="films">
-			<div>
-				<b>Title:</b>: Title<br />
-				<b>Film #:</b>: Film<br />
-				<b>Year:</b>: Year<br />
-				<b>Bond:</b>: Bond<br />
-				<b>Box Office:</b>: BoxOffice<br />
-				<b>Writters:</b>: Writters<br />
-				<div class="pic"><img scr="thumbnails/a-veiw-to-a-kill.jpg" /></div>
-			</div>
+			
 		</div>
 		<div id="output">Results go here</div>
 	</body>
