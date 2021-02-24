@@ -103,11 +103,11 @@ function bondJSON(data){
 	$.each(data.films, function(i, item){
 		let text = `
 			<b>Title:</b>: ${item.Title}<br /> 
-			<b>Film :</b>: ${item.Film}<br /> 
-			<b>Year:</b>: ${item.Year}<br /> 
-			<b>Bond:</b>: ${item.Bond}<br /> 
-			<b>Box Office:</b>: ${item.BoxOffice}<br /> 
-			<b>Writters:</b>: ${item.Writters}<br />
+			<b>Film #</b>: ${item.Film}<br /> 
+			<b>Year</b>: ${item.Year}<br /> 
+			<b>Bond</b>: ${item.Bond}<br /> 
+			<b>Box Office</b>: ${item.BoxOffice}<br /> 
+			<b>Writters</b>: ${item.Writters}<br />
 			<div class="pic"><img scr="thumbnails/a-veiw-to-a-kill.jpg" /></div>  
 		`;
 		$("<div></div>").html(text).appendTo("#films");
