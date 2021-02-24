@@ -1,9 +1,10 @@
 <html>
 <head>
+<link rel="stylesheet" href="css/bond.css" />
 <title>Bond Web Service Demo</title>
 <style>
 body {font-family:georgia;}
-<link rel="stylesheet" href="css/bond.css"/>
+
 </style>
 <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 
@@ -107,7 +108,7 @@ function bondJSON(data){
 			<b>Year</b>: ${item.Year}<br /> 
 			<b>Bond</b>: ${item.Bond}<br /> 
 			<b>Box Office</b>: ${item.BoxOffice}<br /> 
-			<b>Writters</b>: ${item.Writters}<br />
+			<b>Writers</b>: ${item.Writers}<br />
 			<div class="pic"><img scr="thumbnails/a-veiw-to-a-kill.jpg" /></div>  
 		`;
 		$("<div></div>").html(text).appendTo("#films");
