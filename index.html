@@ -102,7 +102,7 @@ function bondJSON(data){
 	$("#books").html("");
 
 	//add title h3 element
-	$("#filmtitle").html(data.title);
+	$("#booktitle").html(data.title);
 
 	$.each(data.books, function(i, item){
 		let text = `
@@ -120,11 +120,11 @@ function bondJSON(data){
 </script>
 </head>
 	<body>
-	<h1>Bond Web Service</h1>
+	<h1>Cirque Du Freak</h1>
 		<a href="year" class="category">Bond Films By Year</a><br />
 		<a href="box" class="category">Bond Films By International Box Office Totals</a>
-		<h3 id="filmtitle">Title Will Go Here</h3>
-		<div id="films">
+		<h3 id= "booktitle">Title Will Go Here</h3>
+		<div id="books">
 			
 		</div>
 		<div id="output">Results go here</div>
