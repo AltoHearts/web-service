@@ -1,5 +1,5 @@
 {
-	"title": "Bond Films by Box Office Totals",
+	"title": "Books in Order",
 	
 	"books":[
 				{
@@ -96,12 +96,6 @@
 				"Rating":"4.7/5 Stars", 
 				"Image":"sonsofdestiny.jpg"
 				}
-
- 
-
- 
-
-             
 
 			]
 }
